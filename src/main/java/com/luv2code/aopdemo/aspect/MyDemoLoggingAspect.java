@@ -10,10 +10,12 @@ public class MyDemoLoggingAspect {
 
     // this is where we add all of our related advices for logging
 
+    // let's start with a @Before advice
+
+
     @Before("execution(public void addAccount())")
     public void beforeAddAccountAdive() {
         System.out.println("\n=====>>> Executing @Before adive on addAccount()");
     }
 
-    // let's start with a @Before advice
 }
